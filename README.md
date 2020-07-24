@@ -11,7 +11,7 @@ Elle est basée sur une autre [application préexistante de publication de conte
 Après réalisation d'un clone du repository, lancez la commande depuis le dossier cloné 
 
 ```
-pip install -r requirements.text
+pip install -r requirements.txt
 ```
 
 Pour installer la package python nécessaires.
