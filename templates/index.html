@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <meta charset="UTF-8">
+    <title>Plateforme de test de commentaire - Humanoid - </title>
+</head>
+<body>
+    <div class="container">
+      <div class="wrapper"></div> 
+        <div class= nav>
+          {{nav.top.render()}}
+        </div>
+      <h1 class="align-self-center">  Contexte</h1>
+
+        <p>
+
+        Cette page a vocation a tester l'api de modération de contenu Azure avant implémentation sur le site de madmoizelle.com
+      </p>
+      <h1>Fonctionnement</h1>
+      <p>Veuillez écrire une phrase si dessous pour voir si l'api filtre bien les contenu inapropriés
+          <form action="/comment/new" method="post">
+            <!-- <input type="textarea" value="Commentaire" />  -->
+            <!-- <textarea name="comment"></textarea> -->
+            <textarea name="comment" id="the-textarea" maxlength="300" placeholder="Ecrivez votre commentaire"autofocus></textarea>
+            <div>
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+          </form>
+      </div>
+    </div>
+</body>
+</html>
